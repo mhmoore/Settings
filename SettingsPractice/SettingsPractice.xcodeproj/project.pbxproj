@@ -13,6 +13,8 @@
 		A5E5E0A822F88AC200245096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E5E0A622F88AC200245096 /* LaunchScreen.storyboard */; };
 		A5E5E0B122F88FBA00245096 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5E0B022F88FBA00245096 /* Setting.swift */; };
 		A5E5E0B422F88FE600245096 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5E0B322F88FE600245096 /* SettingController.swift */; };
+		A5E5E0B922F8946300245096 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5E0B822F8946300245096 /* SettingTableViewController.swift */; };
+		A5E5E0BC22F894FF00245096 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5E0BB22F894FF00245096 /* SettingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A5E5E0A922F88AC200245096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5E5E0B022F88FBA00245096 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		A5E5E0B322F88FE600245096 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		A5E5E0B822F8946300245096 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		A5E5E0BB22F894FF00245096 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,12 @@
 		A5E5E09C22F88AC000245096 /* SettingsPractice */ = {
 			isa = PBXGroup;
 			children = (
-				A5E5E0AF22F88DC900245096 /* Resources */,
 				A5E5E0A122F88AC000245096 /* Main.storyboard */,
+				A5E5E0BD22F8950600245096 /* Views */,
+				A5E5E0BB22F894FF00245096 /* SettingTableViewCell.swift */,
+				A5E5E0BA22F8947800245096 /* View Controllers */,
+				A5E5E0B822F8946300245096 /* SettingTableViewController.swift */,
+				A5E5E0AF22F88DC900245096 /* Resources */,
 				A5E5E0B522F88FEC00245096 /* Model Controller */,
 				A5E5E0B222F88FBF00245096 /* Models */,
 			);
@@ -89,6 +97,20 @@
 				A5E5E0B322F88FE600245096 /* SettingController.swift */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		A5E5E0BA22F8947800245096 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A5E5E0BD22F8950600245096 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E5E0B922F8946300245096 /* SettingTableViewController.swift in Sources */,
+				A5E5E0BC22F894FF00245096 /* SettingTableViewCell.swift in Sources */,
 				A5E5E0B422F88FE600245096 /* SettingController.swift in Sources */,
 				A5E5E0B122F88FBA00245096 /* Setting.swift in Sources */,
 				A5E5E09E22F88AC000245096 /* AppDelegate.swift in Sources */,
