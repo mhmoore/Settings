@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol SettingTableViewCellDelegate: class {
+    func cellSettingSwitchValueChanged(cell: SettingTableViewCell, isOn: Bool)
+}
+
+
 class SettingTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
@@ -17,6 +22,8 @@ class SettingTableViewCell: UITableViewCell {
     @IBOutlet weak var settingSwitch: UISwitch!
     
     // MARK: - Properties
+    
+    weak var delegate: SettingTableViewCellDelegate?
     
     var setting: Setting? {
         didSet {
@@ -38,5 +45,8 @@ class SettingTableViewCell: UITableViewCell {
         }
     }
     
-    
+    // MARK: - Actions
+    @IBAction func settingSwitchValuedChanged(_ sender: Any) {
+        delegate?.cellSettingSwitchValueChanged(cell: self, isOn: settingSwitch.isOn)
+    }
 }

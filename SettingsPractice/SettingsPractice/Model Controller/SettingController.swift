@@ -16,6 +16,7 @@ class SettingController {
     // SoT
     var settings = [Setting]()
     
+    // MARK: - Initializer
     init() {
         
         let apps = Setting(name: "Apps", icon: UIImage(named: "apps"))
@@ -25,7 +26,9 @@ class SettingController {
         settings = [apps, books, music]
     }
     
-    
+    func setIsOn(for setting: Setting, isOn: Bool) {
+        setting.isOn = isOn
+    }
     
     
 }
