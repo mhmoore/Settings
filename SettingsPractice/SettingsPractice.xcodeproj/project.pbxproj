@@ -11,6 +11,8 @@
 		A5E5E0A322F88AC000245096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E5E0A122F88AC000245096 /* Main.storyboard */; };
 		A5E5E0A522F88AC200245096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E5E0A422F88AC200245096 /* Assets.xcassets */; };
 		A5E5E0A822F88AC200245096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E5E0A622F88AC200245096 /* LaunchScreen.storyboard */; };
+		A5E5E0B122F88FBA00245096 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5E0B022F88FBA00245096 /* Setting.swift */; };
+		A5E5E0B422F88FE600245096 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5E0B322F88FE600245096 /* SettingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		A5E5E0A422F88AC200245096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5E5E0A722F88AC200245096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5E5E0A922F88AC200245096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E5E0B022F88FBA00245096 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		A5E5E0B322F88FE600245096 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				A5E5E0AF22F88DC900245096 /* Resources */,
 				A5E5E0A122F88AC000245096 /* Main.storyboard */,
+				A5E5E0B522F88FEC00245096 /* Model Controller */,
+				A5E5E0B222F88FBF00245096 /* Models */,
 			);
 			path = SettingsPractice;
 			sourceTree = "<group>";
@@ -67,6 +73,22 @@
 				A5E5E0A922F88AC200245096 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5E5E0B222F88FBF00245096 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5E5E0B022F88FBA00245096 /* Setting.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5E5E0B522F88FEC00245096 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5E5E0B322F88FE600245096 /* SettingController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E5E0B422F88FE600245096 /* SettingController.swift in Sources */,
+				A5E5E0B122F88FBA00245096 /* Setting.swift in Sources */,
 				A5E5E09E22F88AC000245096 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
