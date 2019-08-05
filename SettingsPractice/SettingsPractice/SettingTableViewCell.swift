@@ -42,6 +42,13 @@ class SettingTableViewCell: UITableViewCell {
             backgroundColor = setting.isOn ? .lightGray : .white
         } else {
             
+            // resets the info in the reusable cell
+            iconImageView.image = nil
+            nameLabel.text = ""
+            settingSwitch.isOn = false
+            
+            backgroundColor = .white
+            
         }
     }
     
